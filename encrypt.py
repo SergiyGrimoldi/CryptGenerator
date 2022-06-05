@@ -33,6 +33,7 @@ def searching_key(): ## search for key in directory choosen
         key_file.append(file)
 
 def encryption(): ## creating key for encypt all files in directory to encrypt
+    clear()
     if not ("key.key") in key_file:
         print("Creating key...")
         count_file = 0
@@ -85,5 +86,6 @@ def encryption(): ## creating key for encypt all files in directory to encrypt
 
 searching_key()
 encryption()
+
 
 
