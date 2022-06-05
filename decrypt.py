@@ -13,6 +13,7 @@ def clear(): ## clear terminal/cmd display
 
 
 try:
+    clear()
     print("Searching for key...")
 
     files = []
@@ -53,6 +54,7 @@ try:
         clear()
         print("Decrypted successfully.")
         print(" - Files decrypted: ",count_file, "\n")
+        os.remove("./key.key")
 
     else:
         clear()
